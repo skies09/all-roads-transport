@@ -10,7 +10,7 @@ const Hero = () => {
 				animate={{ opacity: 1 }}
 				transition={{ duration: 1, delay: 0.5 }}
 			>
-				<span className="font-fugaz text-3xl md:text-6xl m-1 text-[#2cc9ff]">
+				<span className="font-racing font-semibold text-3xl md:text-6xl m-1 text-colorThree drop-shadow-lg">
 					All Road Transport
 				</span>
 			</motion.p>
@@ -21,7 +21,7 @@ const Hero = () => {
 		return (
 			<Button
 				text="Contact"
-				className="font-racing px-6 py-2 bg-colorOne text-colorThree border border-colorOne rounded-xl tracking-wider font-semibold lg:overflow-hidden"
+				className="font-fugaz px-6 py-2 bg-colorOne text-colorThree border border-colorOne rounded-xl tracking-wider font-semibold lg:overflow-hidden"
 				active={true}
 				action={"contact"}
 			/>
@@ -31,7 +31,7 @@ const Hero = () => {
 	return (
 		<>
 			<div
-				className="w-screen overflow-hidden h-[50vh] md:h-[90vh] bg-cover bg-center mt-8"
+				className="w-screen overflow-hidden h-[50vh] md:h-[90vh] bg-cover bg-center mt-8 border-b-8 border-colorThree"
 				style={{
 					backgroundImage: "url(../../assets/images/truck2.jpg)",
 				}}
