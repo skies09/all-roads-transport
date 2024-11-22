@@ -1,25 +1,22 @@
-import logo from './logo.svg';
-import './App.css';
+import { useState } from "react";
+import Menu from "./components/menu";
+import Navbar from "./components/navbar";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+import Contact from "./pages/contact";
+import Hero from "./pages/hero";
+
+export default function App() {
+	const [menuOpen, setMenuOpen] = useState(false);
+	// <Navbar menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
+	// <Menu menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
+
+	return (
+		<div>
+			<div className="relative w-full h-screen snap-mandatory snap-y -mt-8">
+				<Hero />
+
+				<Contact />
+			</div>
+		</div>
+	);
 }
-
-export default App;
