@@ -29,19 +29,19 @@ const Navbar = ({ menuOpen, setMenuOpen }) => {
 				<div className="hidden md:flex items-center space-x-6 mr-6 mt-4">
 					<a
 						href="#about"
-						className="text-colorOne font-medium hover:text-colorFour"
+						className="font-fugaz text-colorOne font-medium hover:text-colorFour"
 					>
 						About
 					</a>
 					<a
 						href="#services"
-						className="text-colorOne font-medium hover:text-colorFour"
+						className="font-fugaz text-colorOne font-medium hover:text-colorFour"
 					>
 						Services
 					</a>
 					<a
 						href="#contact"
-						className="text-colorOne font-medium hover:text-colorFour"
+						className="font-fugaz text-colorOne font-medium hover:text-colorFour"
 					>
 						Contact
 					</a>

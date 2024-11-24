@@ -38,7 +38,7 @@ const Menu = ({ menuOpen, setMenuOpen }) => {
 							size="lg"
 							className="text-colorFive hover:text-colorOne"
 						/>
-						<span className="font-display font-medium ml-4 text-colorFive text-xl hover:text-colorOne">
+						<span className="font-fugaz font-medium ml-4 text-colorFive text-xl hover:text-colorOne">
 							About
 						</span>
 					</a>
@@ -53,7 +53,7 @@ const Menu = ({ menuOpen, setMenuOpen }) => {
 							size="lg"
 							className="text-colorFive hover:text-colorOne"
 						/>
-						<span className="font-display font-medium ml-3 text-colorFive text-xl hover:text-colorOne">
+						<span className="font-fugaz font-medium ml-3 text-colorFive text-xl hover:text-colorOne">
 							Services
 						</span>
 					</a>
@@ -69,7 +69,7 @@ const Menu = ({ menuOpen, setMenuOpen }) => {
 							size="lg"
 							className="text-colorFive hover:text-colorOne"
 						/>
-						<span className="font-display font-medium ml-3 text-colorFive text-xl hover:text-colorOne">
+						<span className="font-fugaz font-medium ml-3 text-colorFive text-xl hover:text-colorOne">
 							Contact
 						</span>
 					</a>
