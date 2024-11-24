@@ -8,11 +8,11 @@ import IconCloud from "./components/iconCloud";
 
 export default function App() {
 	const [menuOpen, setMenuOpen] = useState(false);
-	// <Navbar menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
-	// <Menu menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
 
 	return (
 		<div>
+			<Navbar menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
+			<Menu menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
 			<div className="relative w-full h-screen snap-mandatory snap-y -mt-8">
 				<Hero />
 				<IconCloud />

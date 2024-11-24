@@ -1,31 +1,53 @@
-import { faCodeBranch } from "@fortawesome/free-solid-svg-icons";
+import { faTruck } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const Navbar = ({ menuOpen, setMenuOpen }) => {
 	return (
 		<div className="w-full h-16 bg-colorThree fixed top-0 z-50">
-			<div className="flex justify-between items-center">
-				<div className="flex items-center justify-center">
+			<div className="flex justify-between items-center px-4">
+				<div className="flex items-center justify-center md:mt-2">
 					<a
-						href="#intro"
-						className="hidden md:flex font-fugaz text-lg font-semibold text-colorOne ml-6 tracking-tight hover:text-colorFour mt-2"
+						href="#hero"
+						className="hidden md:flex font-racing text-lg font-semibold text-colorOne ml-6 tracking-tight hover:text-colorFour mt-2"
 					>
-						Donna Smith
+						All Road Transport
 					</a>
 
 					<a
-						href="#intro"
+						href="#hero"
 						className="block md:hidden font-racing text-lg font-semibold text-colorOne ml-3 items-center justify-center hover:text-colorFour mt-2"
 					>
-						{"</DS>"}
+						AR Transport
 					</a>
 					<FontAwesomeIcon
-						icon={faCodeBranch}
+						icon={faTruck}
 						size="sm"
 						className="flex justify-center items-center ml-2 mt-2 text-colorOne hover:text-colorFour"
 					/>
 				</div>
-				<div className="mr-4 mt-2 w-8 h-12 flex items-center">
+				{/* Navigation links for large screens */}
+				<div className="hidden md:flex items-center space-x-6 mr-6 mt-4">
+					<a
+						href="#about"
+						className="text-colorOne font-medium hover:text-colorFour"
+					>
+						About
+					</a>
+					<a
+						href="#services"
+						className="text-colorOne font-medium hover:text-colorFour"
+					>
+						Services
+					</a>
+					<a
+						href="#contact"
+						className="text-colorOne font-medium hover:text-colorFour"
+					>
+						Contact
+					</a>
+				</div>
+				{/* Mobile menu icon */}
+				<div className="mr-4 mt-2 w-8 h-12 flex items-center md:hidden">
 					<div
 						className="w-8 h-6 flex flex-col justify-between cursor-pointer"
 						onClick={() => setMenuOpen(!menuOpen)}

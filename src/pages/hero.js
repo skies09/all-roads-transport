@@ -4,14 +4,14 @@ import Button from "../components/button";
 const Hero = () => {
 	const renderText = () => {
 		return (
-			<div className="flex flex-col justify-center items-center lg:justify-start lg:items-start">
+			<div className="flex flex-col justify-center items-center md:justify-start md:items-start">
 				<motion.p
 					className=""
 					initial={{ opacity: 0 }}
 					animate={{ opacity: 1 }}
 					transition={{ duration: 1, delay: 0.5 }}
 				>
-					<span className="font-racing font-semibold text-3xl md:text-5xl m-1 lg:text-6xl text-colorThree drop-shadow-lg">
+					<span className="font-racing font-semibold text-3xl md:text-5xl m-1 lg:text-6xl text-colorThree md:drop-shadow-lg tracking-wide">
 						All Road Transport
 					</span>
 				</motion.p>
@@ -21,7 +21,13 @@ const Hero = () => {
 					animate={{ opacity: 1 }}
 					transition={{ duration: 1, delay: 0.5 }}
 				>
-					<span className="font-fugaz text-xl md:text-3xl m-1 text-colorThree lg:text-colorOne text-center lg:text-left">
+					<span
+						className="font-fugaz text-xl md:text-3xl m-1 text-colorOne text-center md:text-left drop-shadow-2xl tracking-widest md:tracking-wider"
+						style={{
+							textShadow:
+								"1px 1px 0 black, -1px 1px 0 black, 1px -1px 0 black, -1px -1px 0 black",
+						}}
+					>
 						Driver Hire
 					</span>
 				</motion.p>

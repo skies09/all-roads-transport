@@ -5,20 +5,19 @@ module.exports = {
 	theme: {
 		colors: {
 			colorOne: "#C0C0C0",
-			colorTwo: "#003459",
-			colorThree: "#00171F",
-			colorFour: "#007EA7",
-			colorFive: "#F9F9F9",
+			colorTwo: "#2A2A2A",
+			colorThree: "#000000",
+			colorFour: "#383838",
+			colorFive: "#A6A6A6",
 		},
 		fontFamily: {
-			sans: ["Open Sans", "sans-serif"],
-			serif: ["PT Sans", "sans-serif"],
-			mono: ["Roboto", "sans-serif"],
-			display: ["Montserrat", "sans-serif"],
-			monoTwo: ["Roboto Mono", "monospace"],
 			fugaz: ["Fugaz One", "sans-serif"],
-			farsan: ["Farsan", "cursive"],
 			racing: ["Racing Sans One", "sans-serif"],
+			zilla: ["Zilla Slab", "serif"],
+			russo: ["Russo One", "sans-serif"],
+			bebas: ["Bebas Neue", "sans-serif"],
+			oswald: ["Oswald", "sans-serif"],
+			monoTwo: ["Roboto Mono", "monospace"],
 		},
 		extend: {
 			transitionDuration: {
