@@ -47,30 +47,32 @@ const Navbar = ({ menuOpen, setMenuOpen }) => {
 					</a>
 				</div>
 				{/* Mobile menu icon */}
-				<div className="mr-4 mt-2 w-8 h-12 flex items-center md:hidden">
+				<div className="mt-2 w-12 h-12 flex items-center md:hidden">
 					<div
-						className="w-8 h-6 flex flex-col justify-between cursor-pointer"
+						className="relative w-12 h-12 flex justify-center items-center cursor-pointer"
 						onClick={() => setMenuOpen(!menuOpen)}
 					>
-						<span
-							className={`block w-full h-1 bg-colorOne rounded-3xl transition-all duration-1000 ease-in-out origin-center ${
+						{/* Steering Wheel */}
+						<div
+							className={`absolute w-10 h-10 rounded-full border-4 border-colorOne flex justify-center items-center transition-transform duration-700 ease-in-out ${
+								menuOpen ? "scale-0" : "scale-100"
+							}`}
+						>
+							{/* Inner Circle */}
+							<div className="w-4 h-4 bg-colorOne rounded-full"></div>
+						</div>
+
+						{/* Tire Marks */}
+						<div
+							className={`absolute flex justify-center items-center transition-transform duration-700 ease-in-out ${
 								menuOpen
-									? "transform rotate-45 translate-y-2.5"
-									: ""
+									? "scale-100 rotate-90"
+									: "scale-0 rotate-0"
 							}`}
-						></span>
-						<span
-							className={`block w-full h-1 bg-colorOne rounded-3xl transition-all duration-1000 ease-in-out ${
-								menuOpen ? "opacity-0" : ""
-							}`}
-						></span>
-						<span
-							className={`block w-full h-1 bg-colorOne rounded-3xl transition-all duration-1000 ease-in-out origin-center ${
-								menuOpen
-									? "transform -rotate-45 -translate-y-2.5"
-									: ""
-							}`}
-						></span>
+						>
+							<span className="block w-8 h-1 bg-colorOne rounded-full transform -rotate-45 absolute"></span>
+							<span className="block w-8 h-1 bg-colorOne rounded-full transform rotate-45 absolute"></span>
+						</div>
 					</div>
 				</div>
 			</div>
