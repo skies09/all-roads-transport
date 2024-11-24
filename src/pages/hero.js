@@ -4,16 +4,28 @@ import Button from "../components/button";
 const Hero = () => {
 	const renderText = () => {
 		return (
-			<motion.p
-				className=""
-				initial={{ opacity: 0 }}
-				animate={{ opacity: 1 }}
-				transition={{ duration: 1, delay: 0.5 }}
-			>
-				<span className="font-racing font-semibold text-3xl md:text-6xl m-1 text-colorThree drop-shadow-lg">
-					All Road Transport
-				</span>
-			</motion.p>
+			<div className="flex flex-col justify-center items-center lg:justify-start lg:items-start">
+				<motion.p
+					className=""
+					initial={{ opacity: 0 }}
+					animate={{ opacity: 1 }}
+					transition={{ duration: 1, delay: 0.5 }}
+				>
+					<span className="font-racing font-semibold text-3xl md:text-5xl m-1 lg:text-6xl text-colorThree drop-shadow-lg">
+						All Road Transport
+					</span>
+				</motion.p>
+				<motion.p
+					className="mt-3"
+					initial={{ opacity: 0 }}
+					animate={{ opacity: 1 }}
+					transition={{ duration: 1, delay: 0.5 }}
+				>
+					<span className="font-fugaz text-xl md:text-3xl m-1 text-colorThree lg:text-colorOne text-center lg:text-left">
+						Driver Hire
+					</span>
+				</motion.p>
+			</div>
 		);
 	};
 
