@@ -124,42 +124,12 @@ const Contact = () => {
 				Reach out now!
 			</motion.div>
 
-			<div className="pt-2 lg:pt-0 flex flex-col lg:flex-row justify-center items-center w-full lg:w-4/5 mx-auto">
+			<div className="pt-2 lg:pt-8 flex flex-col lg:flex-row justify-center items-center w-full lg:w-4/5 mx-auto">
 				<motion.div
-					className="w-1/2 flex flex-col justify-center items-center h-60 lg:h-[30rem] pt-16 lg:pt-0"
-					initial={{ opacity: 0, x: -100 }}
-					whileInView={{ opacity: 1, x: 0 }}
-					transition={{ duration: 2, ease: "easeOut", delay: 0.2 }}
-				>
-					<div className="relative flex flex-col justify-start items-start border-b border-dotted border-colorFive">
-						<div className="flex flex-row items-center mb-4">
-							<FontAwesomeIcon
-								icon={faPhone}
-								size="lg"
-								className="text-colorFive"
-							/>
-							<span className="ml-4 text-lg lg:text-xl text-colorFive tracking-wider">
-								07950981097
-							</span>
-						</div>
-						<div className="flex flex-row items-center mb-6">
-							<FontAwesomeIcon
-								icon={faEnvelope}
-								size="lg"
-								className="text-colorFive"
-							/>
-							<span className="ml-4 text-lg lg:text-xl text-colorFive tracking-wider">
-								donna.smith08@icloud.com
-							</span>
-						</div>
-					</div>
-					<SocialLinks />
-				</motion.div>
-				<motion.div
-					className="w-10/12 lg:w-1/2 flex justify-center items-start bg-colorThree h-80 lg:h-96"
-					initial={{ opacity: 0, x: 100 }}
-					whileInView={{ opacity: 1, x: 0 }}
-					transition={{ duration: 2, ease: "easeOut", delay: 0.2 }}
+					className="w-10/12 flex justify-center items-start bg-colorThree h-80 lg:h-96"
+					initial={{ opacity: 0 }}
+					whileInView={{ opacity: 1 }}
+					transition={{ duration: 5, ease: "easeOut", delay: 0.5 }}
 				>
 					{!formSubmitted && <ContactForm />}
 					{formSubmitted && (

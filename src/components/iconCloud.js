@@ -14,9 +14,9 @@ const IconCloud = () => {
 			<motion.a
 				id="artic"
 				className="flex flex-col items-center text-center"
-				initial={{ y: -50, opacity: 0 }}
-				animate={{ y: 0, opacity: 1 }}
-				transition={{ type: "spring", stiffness: 150, damping: 10 }}
+				initial={{ x: -50, opacity: 0 }}
+				animate={{ x: 0, opacity: 1 }}
+				transition={{ type: "spring", stiffness: 250, damping: 10 }}
 			>
 				<FontAwesomeIcon
 					icon={faTruckFront}
@@ -31,9 +31,9 @@ const IconCloud = () => {
 			<motion.a
 				id="rigid"
 				className="flex flex-col items-center text-center"
-				initial={{ y: -50, opacity: 0 }}
-				animate={{ y: 0, opacity: 1 }}
-				transition={{ type: "spring", stiffness: 150, damping: 10 }}
+				initial={{ x: -50, opacity: 0 }}
+				animate={{ x: 0, opacity: 1 }}
+				transition={{ type: "spring", stiffness: 250, damping: 10 }}
 			>
 				<FontAwesomeIcon icon={faTruck} size="2x" className="mb-2" />
 				<span className="text-lg font-fugaz font-semibold text-colorThree hover:text-colorOne">
@@ -44,9 +44,9 @@ const IconCloud = () => {
 			<motion.a
 				id="coach"
 				className="hidden md:flex flex-col items-center text-center"
-				initial={{ y: -50, opacity: 0 }}
-				animate={{ y: 0, opacity: 1 }}
-				transition={{ type: "spring", stiffness: 150, damping: 10 }}
+				initial={{ x: -50, opacity: 0 }}
+				animate={{ x: 0, opacity: 1 }}
+				transition={{ type: "spring", stiffness: 250, damping: 10 }}
 			>
 				<FontAwesomeIcon
 					icon={faVanShuttle}
@@ -61,9 +61,9 @@ const IconCloud = () => {
 			<motion.a
 				id="Bus"
 				className="flex flex-col items-center text-center"
-				initial={{ y: -50, opacity: 0 }}
-				animate={{ y: 0, opacity: 1 }}
-				transition={{ type: "spring", stiffness: 150, damping: 10 }}
+				initial={{ x: -50, opacity: 0 }}
+				animate={{ x: 0, opacity: 1 }}
+				transition={{ type: "spring", stiffness: 250, damping: 10 }}
 			>
 				<FontAwesomeIcon icon={faBus} size="2x" className="mb-2" />
 				<span className="text-lg font-fugaz font-semibold text-colorThree hover:text-colorOne">
